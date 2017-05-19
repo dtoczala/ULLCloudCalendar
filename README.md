@@ -1,7 +1,7 @@
 node-scheduler-demo
 ===================
 
-Demo of dhtmlxScheduler with NodeJs + MongoDB as backend
+Demo of ULL Calendar with NodeJs + MongoDB as backend
 
 ### How to start
 
@@ -19,6 +19,14 @@ To generate a single test event, hit <bluemix path>/init to populate a single ev
 
 App expects to find the mongoDB on localhost, you can change the server address in the app.js 
 
+## Deploy pipeline
+
+We use a series of different "manifest_xxx.yml" files to allow us to deploy this application to multiple environments and instances in the Bluemix staging area.  In the deployment pipeline, we only do a deployment to the TestCalendar instance on a code change.  Deployments to the other target instances need to be initiated from the Deployment pipeline screen manually.  Right now, we support three different environments:
+* TestCalendar - our testing instance, auto-deployed on build success
+* ULLCloudCalendar - manually deployed, this is the ULL Cloud team calendar
+* WWGarageCalendar - manually deployed, this is the calendar for the WW Bluemix garage org.
+
+The different manifest files are copied into "manifest.yml" prior to the "cf push", which allows us to change the backend DB's used and the instance names for each of these instances.
 
 ## Files
 

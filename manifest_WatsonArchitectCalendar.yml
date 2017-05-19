@@ -1,15 +1,15 @@
 applications:
 - disk_quota: 1024M
 - services:
-  - mongodb_tox02
-  host: TestCalendar
-  name: TestCalendar
+  - mongolab-WatsonArchitect
+  host: WatsonArchitectCalendar
+  name: WatsonArchitectCalendar
   random-route: true
   path: .
   domain: stage1.mybluemix.net
   instances: 1
   memory: 512M
 declared-services:
-  mongodb_tox02:
+  mongolab-WatsonArchitect:
   label: mongodb
   plan: 100

@@ -1,5 +1,5 @@
 {
-	"name": "ULLCloudCalendar",
+	"name": "TestCalendar",
 	"version": "0.0.1",
 	"description": "dhtmlxScheduler with nodeJs backend",
    "private": "true",

@@ -1,15 +1,15 @@
 applications:
-- disk_quota: 1024M
+- disk_quota: 512M
 - services:
-  - mongodb_tox02
-  host: TestCalendar
-  name: TestCalendar
+  - MongoLab-FerrisCloudCalendar
+  host: FerrisCloudCalendar
+  name: FerrisCloudCalendar
   random-route: true
   path: .
   domain: stage1.mybluemix.net
   instances: 1
   memory: 512M
 declared-services:
-  mongodb_tox02:
+  MongoLab-FerrisCloudCalendar:
   label: mongodb
   plan: 100

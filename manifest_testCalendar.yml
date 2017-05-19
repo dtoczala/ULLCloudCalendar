@@ -1,7 +1,7 @@
 applications:
-- disk_quota: 1024M
+- disk_quota: 512M
 - services:
-  - mongodb_tox02
+  - mongolab-TestCalendar
   host: TestCalendar
   name: TestCalendar
   random-route: true
@@ -10,6 +10,6 @@ applications:
   instances: 1
   memory: 512M
 declared-services:
-  mongodb_tox02:
+  mongolab-TestCalendar:
   label: mongodb
   plan: 100
