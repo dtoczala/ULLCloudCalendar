@@ -1,0 +1,15 @@
+applications:
+- disk_quota: 1024M
+- services:
+  - mongolab-WatsonArchitect
+  host: WatsonAdoptionCalendar
+  name: WatsonAdoptionCalendar
+  random-route: true
+  path: .
+  domain: stage1.mybluemix.net
+  instances: 1
+  memory: 512M
+declared-services:
+  mongolab-WatsonArchitect:
+  label: mongodb
+  plan: 100
