@@ -1,0 +1,15 @@
+applications:
+- disk_quota: 512M
+- services:
+  - mongolab-TestCalendar
+  host: ToxTestCalendar
+  name: ToxTestCalendar
+  random-route: true
+  path: .
+  domain: stage1.mybluemix.net
+  instances: 1
+  memory: 512M
+declared-services:
+  mongolab-TestCalendar:
+  label: mongodb
+  plan: 100
