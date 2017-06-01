@@ -8,7 +8,7 @@ applications:
   path: .
   domain: stage1.mybluemix.net
   instances: 1
-  memory: 512M
+  memory: 1024M
 declared-services:
   mongolab-WatsonArchitect:
   label: mongodb
