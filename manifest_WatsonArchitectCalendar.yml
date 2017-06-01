@@ -6,7 +6,7 @@ applications:
   name: WatsonArchitectCalendar
   random-route: true
   path: .
-  domain: stage1.mybluemix.net
+  domain: stage1.ng.bluemix.net
   instances: 1
   memory: 1024M
 declared-services:
