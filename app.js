@@ -45,7 +45,8 @@ var url = JSON.parse(process.env.VCAP_APPLICATION ||
 
 var app = express();
 
-var mongo_creds = services['mongolab'][0]['credentials'];
+// var mongo_creds = services['mongolab'][0]['credentials'];
+var mongo_creds = services['mongodb'][0]['credentials'];
 var mongo_uri			= mongo_creds['uri'];
 
 //Random variables
